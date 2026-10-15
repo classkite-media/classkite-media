@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#003463;--blue:#0067F8;--sky:#05A1D7;--teal:#15CDD2;--mint:#BAF0F2}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+#stage{position:relative;width:1080px;height:1920px;background:linear-gradient(165deg,#F4FBFF 0%,#E3F4FB 100%);overflow:hidden}
+.scene{position:absolute;inset:0;opacity:0}
+.cap{position:absolute;left:90px;right:90px;top:230px;color:var(--navy);font-weight:800;font-size:92px;line-height:1.08;letter-spacing:-2px}
+.cap small{display:block;font-size:44px;font-weight:600;color:var(--blue);letter-spacing:0;margin-top:28px;line-height:1.3}
+.step{display:inline-block;background:var(--blue);color:#fff;border-radius:28px;font-size:44px;font-weight:700;padding:12px 30px;margin-bottom:34px;letter-spacing:0}
+.note{position:absolute;left:90px;right:90px;bottom:170px;text-align:center;font-size:34px;font-weight:600;color:#3B5B7A}
+svg{position:absolute;left:0;top:0}
+#bar{position:absolute;left:0;bottom:0;height:14px;background:linear-gradient(90deg,var(--blue),var(--teal));width:0}
+#end{background:linear-gradient(165deg,#0052C4 0%,var(--navy) 100%)}
+#end .t{position:absolute;left:0;right:0;text-align:center;color:#fff}
+</style></head><body>
+<div id="stage">
+
+<!-- hook -->
+<div class="scene" id="s0">
+  <div class="cap">Teach it.<br>Check it.<br>Move on.<small>The ClassKite teaching cycle, one concept at a time.</small></div>
+  <svg width="1080" height="1920"><g id="loop" transform="translate(540,1300)">
+    <circle r="260" fill="none" stroke="#BAF0F2" stroke-width="34"/>
+    <path id="looparc" d="M 0 -260 A 260 260 0 1 1 -225 130" fill="none" stroke="#0067F8" stroke-width="34" stroke-linecap="round"/>
+    <circle cx="0" cy="-260" r="44" fill="#003463"/><circle cx="225" cy="130" r="44" fill="#05A1D7"/><circle cx="-225" cy="130" r="44" fill="#15CDD2"/>
+  </g></svg>
+</div>
+
+<!-- step 1 teach -->
+<div class="scene" id="s1">
+  <div class="cap"><span class="step">Step 1</span><br>Teach from<br>your PDF.<small>Students' screens follow your page.</small></div>
+  <svg width="1080" height="1920">
+    <rect x="100" y="880" width="880" height="560" rx="30" fill="#003463"/>
+    <rect x="128" y="908" width="824" height="504" rx="14" fill="#fff"/>
+    <rect x="190" y="975" width="500" height="28" rx="14" fill="#BAF0F2"/>
+    <rect x="190" y="1040" width="420" height="28" rx="14" fill="#BAF0F2"/>
+    <rect x="190" y="1105" width="460" height="28" rx="14" fill="#BAF0F2"/>
+    <rect x="190" y="1190" width="230" height="170" rx="18" fill="#05A1D7" opacity=".35"/>
+    <path id="ink1" d="M185 1166 C 320 1148, 500 1176, 690 1155" stroke="#0067F8" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <path id="ink2" d="M480 1290 C 530 1215, 640 1215, 700 1290 C 760 1365, 860 1355, 880 1265" stroke="#15CDD2" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <g id="pen"><rect x="-14" y="-150" width="28" height="130" rx="10" fill="#003463" transform="rotate(25)"/><path d="M0 0 l-12 -26 l24 0 z" fill="#0067F8" transform="rotate(25)"/></g>
+    <g id="tabs1"></g>
+  </svg>
+</div>
+
+<!-- step 2 start practice -->
+<div class="scene" id="s2">
+  <div class="cap"><span class="step">Step 2</span><br>Start the practice<br>for that concept.<small>Pick it on the board, then press Start Session.</small></div>
+  <svg width="1080" height="1920">
+    <rect x="100" y="880" width="880" height="420" rx="30" fill="#003463"/>
+    <rect x="128" y="908" width="824" height="364" rx="14" fill="#fff"/>
+    <rect x="128" y="908" width="824" height="90" rx="14" fill="#E3F4FB"/>
+    <rect x="160" y="928" width="300" height="50" rx="25" fill="#fff" stroke="#05A1D7" stroke-width="4"/>
+    <rect x="182" y="946" width="160" height="14" rx="7" fill="#BAF0F2"/>
+    <g id="playbtn" transform="translate(840,953)"><circle r="34" fill="#0067F8"/><path d="M-10 -16 L 18 0 L -10 16 z" fill="#fff"/></g>
+    <rect x="190" y="1040" width="500" height="26" rx="13" fill="#BAF0F2"/><rect x="190" y="1100" width="420" height="26" rx="13" fill="#BAF0F2"/>
+    <g id="tabs2"></g>
+  </svg>
+</div>
+
+<!-- step 3 answers marked -->
+<div class="scene" id="s3">
+  <div class="cap"><span class="step">Step 3</span><br>Students answer<br>on their devices.<small>Every answer is marked instantly.</small></div>
+  <svg width="1080" height="1920"><g id="tabs3"></g></svg>
+</div>
+
+<!-- step 4 grid -->
+<div class="scene" id="s4">
+  <div class="cap"><span class="step">Step 4</span><br>See who needs<br>help first.<small>Red: a student keeps missing a question.</small></div>
+  <svg width="1080" height="1920"><g transform="translate(150,880)"><rect width="780" height="560" rx="30" fill="#003463"/><rect x="24" y="24" width="732" height="512" rx="12" fill="#fff"/><g id="grid4"></g></g></svg>
+  <div class="note">Live Student Grid: Teacher Plus and School plans</div>
+</div>
+
+<!-- step 5 all green -->
+<div class="scene" id="s5">
+  <div class="cap">All green?<br>Next concept.<small>End the session and go back to the Smart Board.</small></div>
+  <svg width="1080" height="1920"><g transform="translate(150,880)"><rect width="780" height="560" rx="30" fill="#003463"/><rect x="24" y="24" width="732" height="512" rx="12" fill="#fff"/><g id="grid5"></g></g>
+    <g id="nextarrow" transform="translate(540,1600)"><circle r="70" fill="#15CDD2"/><path d="M-26 0 h46 M4 -24 l24 24 l-24 24" stroke="#003463" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+</div>
+
+<!-- end -->
+<div class="scene" id="end">
+  <img id="logo" src="logo.png" style="position:absolute;left:390px;top:560px;width:300px;height:300px;border-radius:64px">
+  <div class="t" style="top:930px;font-size:110px;font-weight:800;letter-spacing:-2px">ClassKite</div>
+  <div class="t" style="top:1090px;font-size:50px;font-weight:600;color:#BAF0F2">Free for teachers to start</div>
+  <div class="t" style="top:1260px;font-size:54px;font-weight:700"><span style="background:#15CDD2;color:#003463;padding:20px 48px;border-radius:60px">classkite.com</span></div>
+</div>
+<div id="bar"></div>
+</div>
+<script>
+const D=JSON.parse(decodeURIComponent(location.hash.slice(1)||'%5B4.4%2C7.8%2C7.4%2C6.2%2C7.1%2C5%2C4.8%5D'));
+const IDS=['s0','s1','s2','s3','s4','s5','end']; const ST=[0]; D.forEach(d=>ST.push(ST[ST.length-1]+d)); const DUR=ST[ST.length-1];
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3), cl=x=>Math.max(0,Math.min(1,x));
+const tab=(x,y,inner,id)=>`<g id="${id}" transform="translate(${x},${y})"><rect width="240" height="320" rx="26" fill="#003463"/><rect x="14" y="14" width="212" height="292" rx="12" fill="#fff"/>${inner}</g>`;
+const TX=[110,420,730];
+// step1 tablets: mirror page + ink
+TX.forEach((x,i)=>document.getElementById('tabs1').insertAdjacentHTML('beforeend',tab(x,1500,`<rect x="34" y="44" width="140" height="12" rx="6" fill="#BAF0F2"/><rect x="34" y="70" width="110" height="12" rx="6" fill="#BAF0F2"/><path class="tink" d="M32 112 C 70 104, 120 118, 176 108" stroke="#0067F8" stroke-width="6" fill="none" stroke-linecap="round"/>`,'t1_'+i)));
+// step2 tablets: question card appears
+const Q=`<g class="q"><rect x="34" y="40" width="172" height="16" rx="8" fill="#003463" opacity=".8"/><rect x="34" y="66" width="120" height="12" rx="6" fill="#BAF0F2"/>${[0,1,2].map(j=>`<rect x="34" y="${110+j*58}" width="172" height="42" rx="12" fill="#E3F4FB" stroke="#05A1D7" stroke-width="3"/>`).join('')}</g>`;
+TX.forEach((x,i)=>document.getElementById('tabs2').insertAdjacentHTML('beforeend',tab(x,1400,Q,'t2_'+i)));
+// step3: bigger tablets with marks
+const marks=['ok','ok','no'];
+[[110,900],[420,900],[730,900],[265,1330],[575,1330]].forEach(([x,y],i)=>{
+  const ok=i!==2; const pick=110+((i%3))*58;
+  document.getElementById('tabs3').insertAdjacentHTML('beforeend',tab(x,y,Q+`<rect class="pick" x="34" y="${pick}" width="172" height="42" rx="12" fill="${ok?'#3DBE7A':'#E5534B'}" opacity="0"/><g class="mk" opacity="0" transform="translate(120,${pick+21})">${ok?'<path d="M-16 0 l10 10 l20 -20" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M-10 -10 l20 20 M10 -10 l-20 20" stroke="#fff" stroke-width="7" stroke-linecap="round"/>'}</g>`,'t3_'+i));});
+// grids
+const C={g:'#3DBE7A',y:'#F5C443',r:'#E5534B',x:'#C9D3DD'};
+function grid(id,L){const g=document.getElementById(id);[...L].forEach((c,i)=>{const x=70+(i%4)*165,y=60+Math.floor(i/4)*115;g.insertAdjacentHTML('beforeend',`<rect class="cell" data-c="${c}" x="${x}" y="${y}" width="140" height="90" rx="14" fill="${C[c]}"/>`)});}
+grid('grid4','gggygryggxgygrgy'); grid('grid5','gggygryggxgygrgy');
+['ink1','ink2'].forEach(id=>{const p=document.getElementById(id);p.dataset.L=p.getTotalLength();p.style.strokeDasharray=p.dataset.L;});
+
+function render(t){
+  IDS.forEach((id,i)=>{const a=ST[i],b=ST[i+1];let o=cl((t-a)/0.35)*cl((b-t)/0.35);if(i===0&&t<0.35)o=1;if(i===6&&t>b-0.35)o=1;
+    const el=document.getElementById(id);el.style.opacity=o;const cap=el.querySelector('.cap');if(cap){const k=ease((t-a)/0.6);cap.style.transform=`translateY(${(1-k)*60}px)`;}});
+  const L=i=>t-ST[i];
+  // hook loop spin
+  document.getElementById('loop').setAttribute('transform',`translate(540,1300) rotate(${L(0)*40})`);
+  // step1 ink + tablets
+  const i1=document.getElementById('ink1'),i2=document.getElementById('ink2');const d1=ease((L(1)-1.0)/1.4),d2=ease((L(1)-2.6)/1.8);
+  i1.style.strokeDashoffset=i1.dataset.L*(1-d1);i2.style.strokeDashoffset=i2.dataset.L*(1-d2);
+  const pt=L(1)<2.6?i1.getPointAtLength(i1.dataset.L*d1):i2.getPointAtLength(i2.dataset.L*d2);
+  document.getElementById('pen').setAttribute('transform',`translate(${pt.x},${pt.y})`);
+  TX.forEach((x,i)=>{const g=document.getElementById('t1_'+i);const k=ease((L(1)-0.4-i*0.25)/0.6);g.style.opacity=k;g.setAttribute('transform',`translate(${x},${1500+(1-k)*100})`);
+    const ink=g.querySelector('.tink');ink.style.strokeDasharray=160;ink.style.strokeDashoffset=160*(1-d1);});
+  // step2 press play then questions appear
+  const pb=L(2)-2.2; const s=pb>0&&pb<0.4?1-0.15*Math.sin(pb/0.4*Math.PI):1;
+  document.getElementById('playbtn').setAttribute('transform',`translate(840,953) scale(${s})`);
+  TX.forEach((x,i)=>{const g=document.getElementById('t2_'+i);const k=ease((L(2)-2.7-i*0.25)/0.6);g.querySelector('.q').style.opacity=k;
+    g.setAttribute('transform',`translate(${x},${1400+(1-ease((L(2)-0.3)/0.6))*100})`);});
+  // step3 picks + marks
+  for(let i=0;i<5;i++){const g=document.getElementById('t3_'+i);const k=ease((L(3)-1.2-i*0.45)/0.35);g.querySelector('.pick').setAttribute('opacity',k);g.querySelector('.mk').setAttribute('opacity',k);}
+  // step4 red pulse
+  document.querySelectorAll('#grid4 .cell').forEach(c=>{if(c.dataset.c==='r'){const p=0.5+0.5*Math.sin(L(4)*6);c.setAttribute('stroke','#E5534B');c.setAttribute('stroke-width',4+p*10);c.setAttribute('stroke-opacity',0.4+0.6*p);}});
+  // step5 turn green progressively
+  document.querySelectorAll('#grid5 .cell').forEach((c,i)=>{if(c.dataset.c!=='g'){c.setAttribute('fill',L(5)>0.6+i*0.08?C.g:C[c.dataset.c]);}});
+  const ka=ease((L(5)-2.4)/0.6);document.getElementById('nextarrow').setAttribute('transform',`translate(${540+ka*0},1600) scale(${ka})`);
+  const ke=ease((L(6)-0.2)/0.8);document.getElementById('logo').style.transform=`scale(${0.6+0.4*ke}) rotate(${(1-ke)*-12}deg)`;
+  document.getElementById('bar').style.width=(t/DUR*1080)+'px';
+}
+window.render=render;window.DUR=DUR;render(0);
+</script></body></html>

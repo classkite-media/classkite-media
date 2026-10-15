@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#ccc;font-family:Inter,sans-serif}
+.ab{position:relative;margin:0 0 20px 0;background:linear-gradient(160deg,#F4FBFF,#DDF1FA);overflow:hidden}
+.sq{width:1080px;height:1080px}.ls{width:1200px;height:627px}
+.mark{position:absolute;right:40px;bottom:36px;width:84px;height:84px;border-radius:20px}
+svg{position:absolute;left:0;top:0}
+</style></head><body>
+
+<!-- 1: PDF to board -->
+<div class="ab sq" id="img1"><svg width="1080" height="1080">
+ <g transform="translate(90,330)"><rect width="250" height="330" rx="20" fill="#fff" stroke="#003463" stroke-width="7"/><path d="M185 0 v65 h65" fill="#DDF1FA" stroke="#003463" stroke-width="7"/>
+ <rect x="35" y="100" width="170" height="16" rx="8" fill="#BAF0F2"/><rect x="35" y="140" width="140" height="16" rx="8" fill="#BAF0F2"/><rect x="35" y="180" width="160" height="16" rx="8" fill="#BAF0F2"/><rect x="35" y="230" width="90" height="65" rx="10" fill="#05A1D7" opacity=".35"/></g>
+ <path d="M360 470 C 420 380, 470 380, 520 440" stroke="#05A1D7" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M500 410 l25 35 l-42 8" stroke="#05A1D7" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <g transform="translate(540,250)"><rect width="460" height="320" rx="20" fill="#003463"/><rect x="16" y="16" width="428" height="288" rx="8" fill="#fff"/>
+ <rect x="50" y="56" width="260" height="18" rx="9" fill="#BAF0F2"/><rect x="50" y="96" width="220" height="18" rx="9" fill="#BAF0F2"/><rect x="50" y="136" width="240" height="18" rx="9" fill="#BAF0F2"/><rect x="50" y="186" width="130" height="90" rx="12" fill="#05A1D7" opacity=".35"/>
+ <path d="M46 126 C 120 116, 220 132, 320 120" stroke="#0067F8" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M220 240 C 250 190, 320 190, 350 240 C 380 285, 420 270, 420 225" stroke="#15CDD2" stroke-width="9" fill="none" stroke-linecap="round"/>
+ <rect x="200" y="320" width="60" height="70" fill="#003463"/><rect x="140" y="384" width="180" height="18" rx="9" fill="#003463"/></g>
+ <g id="tabs1"></g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 2: grid -->
+<div class="ab sq" id="img2"><svg width="1080" height="1080">
+ <g transform="translate(150,170)"><rect width="780" height="560" rx="30" fill="#003463"/><rect x="24" y="24" width="732" height="512" rx="12" fill="#fff"/><g id="grid"></g></g>
+ <path d="M60 730 h960 l-80 60 h-800 z" fill="#003463" opacity=".9"/>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 3: bars landscape -->
+<div class="ab ls" id="img3"><svg width="1200" height="627">
+ <line x1="160" y1="520" x2="1040" y2="520" stroke="#003463" stroke-width="6" stroke-linecap="round"/>
+ <rect x="260" y="120" width="200" height="400" rx="14" fill="#0067F8"/>
+ <rect x="260" y="200" width="200" height="320" rx="14" fill="none" stroke="#BAF0F2" stroke-width="6" stroke-dasharray="18 12"/>
+ <rect x="740" y="160" width="200" height="360" rx="14" fill="none" stroke="#05A1D7" stroke-width="6" stroke-dasharray="18 12"/>
+ <rect x="740" y="440" width="200" height="80" rx="14" fill="#003463"/>
+ <g transform="translate(325,545)"><rect width="70" height="56" rx="8" fill="#fff" stroke="#003463" stroke-width="5"/><rect x="12" y="14" width="46" height="7" rx="3" fill="#15CDD2"/><rect x="12" y="30" width="34" height="7" rx="3" fill="#15CDD2"/></g>
+ <g transform="translate(805,545)"><rect width="70" height="56" rx="8" fill="#fff" stroke="#003463" stroke-width="5"/><path d="M14 32 l12 12 l30 -30" stroke="#0067F8" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg><img class="mark" src="logo.png" style="width:64px;height:64px"></div>
+
+<!-- 4: home practice -->
+<div class="ab sq" id="img4"><svg width="1080" height="1080">
+ <circle cx="760" cy="300" r="230" fill="#BAF0F2" opacity=".6"/>
+ <path d="M720 120 v80 M650 200 h140 l-30 70 h-80 z" stroke="#003463" stroke-width="10" fill="#15CDD2" stroke-linejoin="round"/>
+ <rect x="90" y="700" width="900" height="34" rx="12" fill="#003463"/><rect x="150" y="734" width="26" height="250" fill="#003463"/><rect x="904" y="734" width="26" height="250" fill="#003463"/>
+ <g transform="translate(330,330)"><circle cx="0" cy="0" r="70" fill="#003463"/><path d="M-130 370 C -130 150, 130 150, 130 370 z" fill="#0067F8"/></g>
+ <g transform="translate(400,520) rotate(-8)"><rect width="300" height="200" rx="22" fill="#003463"/><rect x="14" y="14" width="272" height="172" rx="10" fill="#fff"/><rect x="40" y="50" width="160" height="14" rx="7" fill="#BAF0F2"/><rect x="40" y="82" width="120" height="14" rx="7" fill="#BAF0F2"/><path d="M40 130 l18 18 l40 -40" stroke="#15CDD2" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+ <g transform="translate(560,420)"><path d="M -60 0 A 60 60 0 1 1 0 60" stroke="#05A1D7" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M -82 -8 l22 30 l26 -28" stroke="#05A1D7" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 5: ABCD -->
+<div class="ab sq" id="img5"><svg width="1080" height="1080">
+ <text x="540" y="250" text-anchor="middle" font-size="190" font-weight="800" fill="#15CDD2">?</text>
+ <g font-size="150" font-weight="800" fill="#fff" text-anchor="middle">
+ <rect x="170" y="330" width="340" height="300" rx="36" fill="#003463"/><text x="340" y="535">A</text>
+ <rect x="570" y="330" width="340" height="300" rx="36" fill="#0067F8"/><text x="740" y="535">B</text>
+ <rect x="170" y="670" width="340" height="300" rx="36" fill="#05A1D7"/><text x="340" y="875">C</text>
+ <rect x="570" y="670" width="340" height="300" rx="36" fill="#003463"/><text x="740" y="875">D</text></g>
+</svg><img class="mark" src="logo.png"></div>
+
+<script>
+const t=document.getElementById('tabs1');
+[[300,760],[490,760],[680,760]].forEach(([x,y])=>t.insertAdjacentHTML('beforeend',`<g transform="translate(${x},${y})"><rect width="160" height="210" rx="18" fill="#003463"/><rect x="10" y="10" width="140" height="190" rx="8" fill="#fff"/><rect x="24" y="36" width="90" height="9" rx="4" fill="#BAF0F2"/><rect x="24" y="56" width="70" height="9" rx="4" fill="#BAF0F2"/><path d="M22 82 C 50 76, 90 86, 130 78" stroke="#0067F8" stroke-width="5" fill="none" stroke-linecap="round"/></g>`));
+const g=document.getElementById('grid'); const C={g:'#3DBE7A',y:'#F5C443',r:'#E5534B',x:'#C9D3DD',f:'#F5C443'};
+const L='gggygryggxgygrgf';
+[...L].forEach((c,i)=>{const x=70+(i%4)*165, y=60+Math.floor(i/4)*115;
+ g.insertAdjacentHTML('beforeend',`<rect x="${x}" y="${y}" width="140" height="90" rx="14" fill="${C[c]}"/>`+(c==='f'?`<g transform="translate(${x+50},${y+18})"><rect width="6" height="56" fill="#003463"/><path d="M6 0 h36 l-10 14 l10 14 h-36z" fill="#E5534B"/></g>`:''));});
+</script></body></html>
