@@ -1,0 +1,155 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#ccc;font-family:Inter,sans-serif}
+.ab{position:relative;margin:0 0 20px 0;background:linear-gradient(160deg,#F4FBFF,#DDF1FA);overflow:hidden;width:1080px;height:1080px}
+.mark{position:absolute;right:40px;bottom:36px;width:84px;height:84px;border-radius:20px}
+svg{position:absolute;left:0;top:0}
+</style></head><body>
+
+<!-- 1: copy a class -->
+<div class="ab" id="img1"><svg width="1080" height="1080">
+ <defs>
+  <g id="folder"><path d="M0 14 q0-14 14-14 h40 l14 16 h58 q14 0 14 14 v62 q0 14-14 14 h-112 q-14 0-14-14z" fill="#05A1D7"/></g>
+  <g id="pdf"><rect width="96" height="122" rx="12" fill="#fff" stroke="#003463" stroke-width="6"/><rect x="18" y="30" width="60" height="9" rx="4" fill="#BAF0F2"/><rect x="18" y="52" width="46" height="9" rx="4" fill="#BAF0F2"/><rect x="18" y="80" width="40" height="26" rx="6" fill="#15CDD2" opacity=".5"/></g>
+  <g id="qcard"><rect width="140" height="70" rx="12" fill="#0067F8"/><rect x="18" y="20" width="80" height="9" rx="4" fill="#fff" opacity=".85"/><rect x="18" y="40" width="54" height="9" rx="4" fill="#fff" opacity=".6"/></g>
+  <g id="kid"><circle cx="0" cy="0" r="22" fill="#003463"/><path d="M-36 66 q0-42 36-42 q36 0 36 42z" fill="#003463"/></g>
+ </defs>
+ <!-- left class card -->
+ <g transform="translate(70,200)">
+  <rect width="400" height="620" rx="34" fill="#fff" stroke="#003463" stroke-width="7"/>
+  <rect x="0" y="0" width="400" height="90" rx="34" fill="#003463"/><rect x="0" y="56" width="400" height="34" fill="#003463"/>
+  <rect x="36" y="32" width="170" height="20" rx="10" fill="#BAF0F2"/>
+  <use href="#folder" x="40" y="130"/><use href="#pdf" x="220" y="122"/>
+  <use href="#qcard" x="40" y="280"/><use href="#qcard" x="200" y="280" opacity=".8"/>
+  <line x1="40" y1="400" x2="360" y2="400" stroke="#DDF1FA" stroke-width="5"/>
+  <use href="#kid" x="90" y="470"/><use href="#kid" x="200" y="470"/><use href="#kid" x="310" y="470"/>
+ </g>
+ <!-- arrow -->
+ <path d="M490 400 C 530 360, 570 360, 600 400" stroke="#15CDD2" stroke-width="14" fill="none" stroke-linecap="round"/>
+ <path d="M582 372 l22 32 l-38 6" stroke="#15CDD2" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <!-- right class card -->
+ <g transform="translate(610,200)">
+  <rect width="400" height="620" rx="34" fill="#fff" stroke="#003463" stroke-width="7"/>
+  <rect x="0" y="0" width="400" height="90" rx="34" fill="#0067F8"/><rect x="0" y="56" width="400" height="34" fill="#0067F8"/>
+  <rect x="36" y="32" width="130" height="20" rx="10" fill="#fff" opacity=".85"/>
+  <use href="#folder" x="40" y="130"/><use href="#pdf" x="220" y="122"/>
+  <use href="#qcard" x="40" y="280"/><use href="#qcard" x="200" y="280" opacity=".8"/>
+  <line x1="40" y1="400" x2="360" y2="400" stroke="#DDF1FA" stroke-width="5"/>
+  <rect x="40" y="430" width="320" height="130" rx="22" fill="none" stroke="#BAF0F2" stroke-width="6" stroke-dasharray="18 12"/>
+  <path d="M176 495 h48 M200 471 v48" stroke="#BAF0F2" stroke-width="10" stroke-linecap="round"/>
+ </g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 2: getting students in -->
+<div class="ab" id="img2"><svg width="1080" height="1080">
+ <g transform="translate(110,170)">
+  <rect width="360" height="230" rx="30" fill="#003463"/>
+  <g transform="translate(46,56)"><circle cx="30" cy="30" r="26" fill="none" stroke="#15CDD2" stroke-width="10"/><path d="M54 40 h80 M110 40 v26 M130 40 v18" stroke="#15CDD2" stroke-width="10" stroke-linecap="round"/></g>
+  <g fill="#BAF0F2"><circle cx="70" cy="175" r="13"/><circle cx="114" cy="175" r="13"/><circle cx="158" cy="175" r="13"/><circle cx="202" cy="175" r="13"/><circle cx="246" cy="175" r="13"/><circle cx="290" cy="175" r="13"/></g>
+ </g>
+ <g transform="translate(610,170)">
+  <rect width="360" height="230" rx="30" fill="#fff" stroke="#003463" stroke-width="7"/>
+  <g stroke="#BAF0F2" stroke-width="5"><line x1="30" y1="80" x2="330" y2="80"/><line x1="30" y1="125" x2="330" y2="125"/><line x1="30" y1="170" x2="330" y2="170"/><line x1="130" y1="40" x2="130" y2="200"/><line x1="230" y1="40" x2="230" y2="200"/></g>
+  <rect x="30" y="40" width="300" height="40" rx="8" fill="#05A1D7" opacity=".45"/>
+  <path d="M250 140 l14 14 l30 -30" stroke="#15CDD2" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <path d="M290 420 C 300 520, 420 560, 520 600" stroke="#05A1D7" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="2 22"/>
+ <path d="M790 420 C 780 520, 660 560, 560 600" stroke="#05A1D7" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="2 22"/>
+ <g transform="translate(140,640)">
+  <rect width="800" height="270" rx="36" fill="#fff" stroke="#003463" stroke-width="7"/>
+  <g fill="#0067F8">
+   <g transform="translate(110,95)"><circle r="34"/><path d="M-56 120 q0-70 56-70 q56 0 56 70z"/></g>
+   <g transform="translate(255,95)" fill="#05A1D7"><circle r="34"/><path d="M-56 120 q0-70 56-70 q56 0 56 70z"/></g>
+   <g transform="translate(400,95)" fill="#003463"><circle r="34"/><path d="M-56 120 q0-70 56-70 q56 0 56 70z"/></g>
+   <g transform="translate(545,95)" fill="#15CDD2"><circle r="34"/><path d="M-56 120 q0-70 56-70 q56 0 56 70z"/></g>
+   <g transform="translate(690,95)"><circle r="34"/><path d="M-56 120 q0-70 56-70 q56 0 56 70z"/></g>
+  </g>
+ </g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 3: exit ticket -->
+<div class="ab" id="img3"><svg width="1080" height="1080">
+ <g transform="translate(110,250) rotate(-5)">
+  <path d="M0 30 q0-30 30-30 h500 q30 0 30 30 v120 a40 40 0 0 0 0 80 v170 q0 30-30 30 h-500 q-30 0-30-30 v-170 a40 40 0 0 0 0-80z" fill="#fff" stroke="#003463" stroke-width="8"/>
+  <line x1="120" y1="20" x2="120" y2="410" stroke="#BAF0F2" stroke-width="5" stroke-dasharray="14 12"/>
+  <text x="84" y="230" font-size="60" font-weight="800" fill="#0067F8" transform="rotate(-90 84 230)" text-anchor="middle">EXIT</text>
+  <g transform="translate(160,70)">
+   <rect width="250" height="20" rx="10" fill="#BAF0F2"/><path d="M320 -6 l16 16 l34 -34" stroke="#15CDD2" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <rect y="120" width="210" height="20" rx="10" fill="#BAF0F2"/><path d="M320 114 l16 16 l34 -34" stroke="#15CDD2" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <rect y="240" width="230" height="20" rx="10" fill="#BAF0F2"/><path d="M322 226 l32 32 M354 226 l-32 32" stroke="#F5A623" stroke-width="12" fill="none" stroke-linecap="round"/>
+  </g>
+ </g>
+ <g transform="translate(830,790)">
+  <circle r="140" fill="#003463"/><circle r="118" fill="#fff"/>
+  <g stroke="#003463" stroke-width="8" stroke-linecap="round"><line x1="0" y1="-98" x2="0" y2="-84"/><line x1="98" y1="0" x2="84" y2="0"/><line x1="0" y1="98" x2="0" y2="84"/><line x1="-98" y1="0" x2="-84" y2="0"/></g>
+  <path d="M0 0 A 96 96 0 0 0 -48 -83 L0 0z" fill="#15CDD2" opacity=".45"/>
+  <line x1="0" y1="0" x2="0" y2="-80" stroke="#003463" stroke-width="10" stroke-linecap="round"/>
+  <line x1="0" y1="0" x2="-44" y2="-28" stroke="#0067F8" stroke-width="10" stroke-linecap="round"/>
+  <circle r="10" fill="#003463"/>
+ </g>
+</svg><img class="mark" src="logo.png" style="left:40px;right:auto"></div>
+
+<!-- 4: quiz conditions -->
+<div class="ab" id="img4"><svg width="1080" height="1080">
+ <g transform="translate(120,190)">
+  <rect width="560" height="600" rx="36" fill="#fff" stroke="#003463" stroke-width="8"/>
+  <rect x="50" y="60" width="380" height="24" rx="12" fill="#003463" opacity=".85"/>
+  <rect x="50" y="104" width="300" height="24" rx="12" fill="#003463" opacity=".45"/>
+  <g transform="translate(50,180)">
+   <rect width="460" height="76" rx="18" fill="#DDF1FA"/><rect y="96" width="460" height="76" rx="18" fill="#0067F8"/><rect y="192" width="460" height="76" rx="18" fill="#DDF1FA"/><rect y="288" width="460" height="76" rx="18" fill="#DDF1FA"/>
+   <circle cx="40" cy="38" r="14" fill="#fff" stroke="#003463" stroke-width="5"/><circle cx="40" cy="134" r="14" fill="#fff"/><circle cx="40" cy="230" r="14" fill="#fff" stroke="#003463" stroke-width="5"/><circle cx="40" cy="326" r="14" fill="#fff" stroke="#003463" stroke-width="5"/>
+  </g>
+  <g transform="translate(500,-40)"><rect width="12" height="130" rx="5" fill="#003463"/><path d="M12 4 h86 l-22 30 l22 30 h-86z" fill="#F5A623"/></g>
+ </g>
+ <g transform="translate(640,620)">
+  <path d="M30 0 h300 q30 0 30 30 v140 q0 30-30 30 h-210 l-60 50 l10-50 h-40 q-30 0-30-30 v-140 q0-30 30-30z" fill="#15CDD2"/>
+  <g fill="#fff"><circle cx="110" cy="100" r="16"/><circle cx="180" cy="100" r="16"/><circle cx="250" cy="100" r="16"/></g>
+ </g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 5: engagement A/B/C -->
+<div class="ab" id="img5"><svg width="1080" height="1080">
+ <text x="540" y="230" text-anchor="middle" font-size="170" font-weight="800" fill="#15CDD2">?</text>
+ <g transform="translate(70,320)">
+  <rect width="290" height="560" rx="36" fill="#003463"/>
+  <text x="145" y="140" text-anchor="middle" font-size="130" font-weight="800" fill="#fff">A</text>
+  <g transform="translate(55,250)"><rect width="180" height="120" rx="12" fill="#fff"/><rect x="20" y="25" width="100" height="12" rx="6" fill="#BAF0F2"/><rect x="20" y="50" width="80" height="12" rx="6" fill="#BAF0F2"/><path d="M20 90 C 60 80, 110 96, 160 84" stroke="#15CDD2" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="75" y="120" width="30" height="40" fill="#fff"/><rect x="40" y="156" width="100" height="12" rx="6" fill="#fff"/></g>
+ </g>
+ <g transform="translate(395,320)">
+  <rect width="290" height="560" rx="36" fill="#0067F8"/>
+  <text x="145" y="140" text-anchor="middle" font-size="130" font-weight="800" fill="#fff">B</text>
+  <g transform="translate(55,240)"><path d="M90 0 l100 80 h-26 v110 h-148 v-110 h-26z" fill="#fff"/><rect x="72" y="120" width="36" height="70" rx="6" fill="#0067F8"/><rect x="30" y="100" width="30" height="30" rx="4" fill="#BAF0F2"/><rect x="120" y="100" width="30" height="30" rx="4" fill="#BAF0F2"/></g>
+ </g>
+ <g transform="translate(720,320)">
+  <rect width="290" height="560" rx="36" fill="#05A1D7"/>
+  <text x="145" y="140" text-anchor="middle" font-size="130" font-weight="800" fill="#fff">C</text>
+  <g transform="translate(25,260)"><rect width="100" height="70" rx="8" fill="#fff"/><rect x="45" y="76" width="20" height="24" fill="#fff"/><rect x="22" y="98" width="66" height="9" rx="4" fill="#fff"/>
+   <path d="M175 0 l62 50 h-16 v68 h-92 v-68 h-16z" fill="#fff" transform="translate(6,6) scale(.92)"/>
+   <path d="M60 170 h100" stroke="#fff" stroke-width="10" stroke-linecap="round"/><path d="M140 152 l22 18 l-22 18" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+ </g>
+</svg><img class="mark" src="logo.png"></div>
+
+<!-- 6: layers -->
+<div class="ab" id="img6"><svg width="1080" height="1080">
+ <g transform="translate(170,250)">
+  <rect width="560" height="700" rx="26" fill="#fff" stroke="#003463" stroke-width="8"/>
+  <rect x="50" y="60" width="330" height="20" rx="10" fill="#BAF0F2"/><rect x="50" y="100" width="260" height="20" rx="10" fill="#BAF0F2"/>
+  <path d="M60 200 q30-40 60 0 t60 0 M200 200 h40 M260 180 v40 M240 200 h40 M300 200 q20-30 40 0" stroke="#0067F8" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M60 290 h60 M140 270 q20 40 40 0 M200 290 h40 M260 280 l20 20 l20 -20" stroke="#0067F8" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M60 380 q40 -50 80 0 M170 380 h100" stroke="#0067F8" stroke-width="9" fill="none" stroke-linecap="round"/>
+ </g>
+ <g transform="translate(290,140) rotate(4)">
+  <rect width="560" height="700" rx="26" fill="#BAF0F2" fill-opacity=".28" stroke="#15CDD2" stroke-width="7" stroke-dasharray="22 14"/>
+  <ellipse cx="160" cy="150" rx="150" ry="52" fill="none" stroke="#15CDD2" stroke-width="9"/>
+  <path d="M330 160 l20 20 l40 -46" stroke="#15CDD2" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 330 C 160 300, 240 340, 330 310" stroke="#15CDD2" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M320 300 l18 12 l-14 16" stroke="#15CDD2" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g transform="translate(830,130)">
+  <circle r="80" fill="#003463"/>
+  <rect x="-34" y="-8" width="68" height="54" rx="10" fill="#fff"/>
+  <path d="M-22 -8 v-18 a22 22 0 0 1 44 0 v18" stroke="#fff" stroke-width="10" fill="none"/>
+  <circle cy="18" r="8" fill="#003463"/>
+ </g>
+</svg><img class="mark" src="logo.png"></div>
+
+</body></html>

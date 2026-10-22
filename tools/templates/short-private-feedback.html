@@ -1,0 +1,141 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#003463;--blue:#0067F8;--sky:#05A1D7;--teal:#15CDD2;--mint:#BAF0F2}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+#stage{position:relative;width:1080px;height:1920px;background:linear-gradient(165deg,#F4FBFF 0%,#E3F4FB 100%);overflow:hidden}
+.scene{position:absolute;inset:0;opacity:0}
+.cap{position:absolute;left:90px;right:90px;top:230px;color:var(--navy);font-weight:800;font-size:92px;line-height:1.08;letter-spacing:-2px}
+.cap small{display:block;font-size:44px;font-weight:600;color:var(--blue);letter-spacing:0;margin-top:28px;line-height:1.3}
+.step{display:inline-block;background:var(--blue);color:#fff;border-radius:28px;font-size:44px;font-weight:700;padding:12px 30px;margin-bottom:34px;letter-spacing:0}
+svg{position:absolute;left:0;top:0}
+#bar{position:absolute;left:0;bottom:0;height:14px;background:linear-gradient(90deg,var(--blue),var(--teal));width:0}
+#end{background:linear-gradient(165deg,#0052C4 0%,var(--navy) 100%)}
+#end .t{position:absolute;left:0;right:0;text-align:center;color:#fff}
+</style></head><body>
+<div id="stage">
+
+<!-- hook -->
+<div class="scene" id="s0">
+  <div class="cap">Feedback,<br>just for them.<small>Private notes on every student's page.</small></div>
+  <svg width="1080" height="1920"><g id="hookpage">
+    <rect x="250" y="900" width="580" height="740" rx="30" fill="#fff" stroke="#003463" stroke-width="9"/>
+    <rect x="310" y="970" width="340" height="24" rx="12" fill="#BAF0F2"/><rect x="310" y="1020" width="270" height="24" rx="12" fill="#BAF0F2"/>
+    <path d="M320 1130 q30-40 60 0 t60 0 M470 1130 h44 M536 1108 v44 M514 1130 h44" stroke="#0067F8" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M320 1240 h70 M410 1220 q22 40 44 0 M480 1240 h50" stroke="#0067F8" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <g id="hookbubble"><path d="M640 1300 h230 q30 0 30 30 v120 q0 30-30 30 h-150 l-50 44 l8-44 h-38 q-30 0-30-30 v-120 q0-30 30-30z" fill="#15CDD2"/>
+      <path d="M680 1380 l26 26 l56 -60" stroke="#fff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="hooklock" transform="translate(820,900)"><circle r="78" fill="#003463"/><rect x="-34" y="-6" width="68" height="54" rx="10" fill="#fff"/><path d="M-22 -6 v-18 a22 22 0 0 1 44 0 v18" stroke="#fff" stroke-width="10" fill="none"/><circle cy="20" r="8" fill="#003463"/></g>
+  </g></svg>
+</div>
+
+<!-- layers -->
+<div class="scene" id="s1">
+  <div class="cap">Every page<br>has layers.<small>Yours, plus a private one for each student.</small></div>
+  <svg width="1080" height="1920">
+    <g id="L3"><rect width="520" height="600" rx="26" fill="#fff" stroke="#05A1D7" stroke-width="7"/><path d="M60 140 q30-40 60 0 t60 0" stroke="#05A1D7" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="440" cy="70" r="34" fill="#05A1D7"/></g>
+    <g id="L2"><rect width="520" height="600" rx="26" fill="#fff" stroke="#15CDD2" stroke-width="7"/><path d="M60 140 h80 M170 120 q20 40 40 0" stroke="#15CDD2" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="440" cy="70" r="34" fill="#15CDD2"/></g>
+    <g id="L1"><rect width="520" height="600" rx="26" fill="#fff" stroke="#003463" stroke-width="9"/>
+      <rect x="50" y="60" width="300" height="22" rx="11" fill="#BAF0F2"/><rect x="50" y="106" width="230" height="22" rx="11" fill="#BAF0F2"/>
+      <rect x="50" y="170" width="200" height="140" rx="18" fill="#05A1D7" opacity=".3"/>
+      <path d="M48 360 C 150 340, 300 372, 450 350" stroke="#0067F8" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <circle cx="440" cy="70" r="34" fill="#003463"/></g>
+  </svg>
+</div>
+
+<!-- step 1 menu -->
+<div class="scene" id="s2">
+  <div class="cap"><span class="step">Step 1</span><br>Choose<br>Feedback.<small>Pick the student. Their marks lock while you write.</small></div>
+  <svg width="1080" height="1920">
+    <rect x="140" y="980" width="800" height="700" rx="30" fill="#fff" stroke="#003463" stroke-width="9" opacity=".35"/>
+    <g id="menu" transform="translate(220,900)">
+      <rect width="460" height="400" rx="26" fill="#fff" stroke="#003463" stroke-width="7"/>
+      <rect x="30" y="30" width="400" height="90" rx="18" fill="#E3F4FB"/><rect x="60" y="64" width="180" height="22" rx="11" fill="#9DB4C9"/>
+      <rect id="mitem" x="30" y="150" width="400" height="90" rx="18" fill="#0067F8"/>
+      <g transform="translate(90,195)"><circle r="20" fill="#fff"/><path d="M-30 40 q0-26 30-26 q30 0 30 26" fill="#fff" transform="translate(0,-14) scale(.8)"/></g>
+      <rect x="140" y="184" width="220" height="22" rx="11" fill="#fff"/>
+      <rect x="30" y="270" width="400" height="90" rx="18" fill="#E3F4FB"/><rect x="60" y="304" width="140" height="22" rx="11" fill="#9DB4C9"/>
+    </g>
+    <g id="cursor"><path d="M0 0 l0 70 l18 -18 l14 32 l14 -6 l-14 -32 l26 0z" fill="#003463" stroke="#fff" stroke-width="4"/></g>
+    <g id="lock2" transform="translate(800,1500)"><circle r="90" fill="#003463"/><rect x="-38" y="-6" width="76" height="60" rx="12" fill="#fff"/><path d="M-25 -6 v-20 a25 25 0 0 1 50 0 v20" stroke="#fff" stroke-width="11" fill="none"/><circle cy="22" r="9" fill="#003463"/></g>
+  </svg>
+</div>
+
+<!-- step 2 write -->
+<div class="scene" id="s3">
+  <div class="cap"><span class="step">Step 2</span><br>Write on<br>their page.</div>
+  <svg width="1080" height="1920">
+    <rect x="140" y="820" width="800" height="880" rx="30" fill="#fff" stroke="#003463" stroke-width="9"/>
+    <rect x="210" y="890" width="420" height="26" rx="13" fill="#BAF0F2"/><rect x="210" y="944" width="320" height="26" rx="13" fill="#BAF0F2"/>
+    <path d="M220 1080 q34-46 68 0 t68 0 M390 1080 h50 M466 1054 v52 M440 1080 h52" stroke="#0067F8" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M220 1210 h80 M330 1186 q24 46 48 0 M410 1210 h60 M500 1196 l24 24 l24 -24" stroke="#0067F8" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M220 1340 q46 -58 92 0 M350 1340 h120" stroke="#0067F8" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path id="ink1" d="M200 1060 C 200 1010, 600 1010, 620 1066 C 640 1122, 210 1122, 205 1075" stroke="#15CDD2" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path id="ink2" d="M650 1076 l26 26 l60 -66" stroke="#15CDD2" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="ink3" d="M560 1210 C 640 1180, 720 1240, 820 1190" stroke="#15CDD2" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <g id="pen"><rect x="-14" y="-150" width="28" height="130" rx="10" fill="#003463" transform="rotate(25)"/><path d="M0 0 l-12 -26 l24 0 z" fill="#15CDD2" transform="rotate(25)"/></g>
+  </svg>
+</div>
+
+<!-- step 3 exit -->
+<div class="scene" id="s4">
+  <div class="cap"><span class="step">Step 3</span><br>Press Exit.<small>Only that student sees your notes.</small></div>
+  <svg width="1080" height="1920"><g id="tabs"></g></svg>
+</div>
+
+<!-- end -->
+<div class="scene" id="end">
+  <img id="logo" src="logo.png" style="position:absolute;left:390px;top:540px;width:300px;height:300px;border-radius:64px">
+  <div class="t" style="top:910px;font-size:110px;font-weight:800;letter-spacing:-2px">ClassKite</div>
+  <div class="t" style="top:1070px;font-size:48px;font-weight:600;color:#BAF0F2">Live or after the lesson.<br>On every plan.</div>
+  <div class="t" style="top:1300px;font-size:54px;font-weight:700"><span style="background:#15CDD2;color:#003463;padding:20px 48px;border-radius:60px">classkite.com</span></div>
+</div>
+
+<div id="bar"></div>
+</div>
+<script>
+const D=JSON.parse(decodeURIComponent(location.hash.slice(1)||'%5B5.1%2C5.6%2C6.9%2C3.8%2C5.3%2C7%5D'));
+const IDS=['s0','s1','s2','s3','s4','end']; const ST=[0]; D.forEach(d=>ST.push(ST[ST.length-1]+d)); const DUR=ST[ST.length-1];
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3), cl=x=>Math.max(0,Math.min(1,x));
+// step3 tablets
+const TX=[110,420,730];
+TX.forEach((x,i)=>{const sel=i===1;document.getElementById('tabs').insertAdjacentHTML('beforeend',
+ `<g id="tb${i}" transform="translate(${x},1000)"><rect width="240" height="340" rx="26" fill="${sel?'#003463':'#9DB4C9'}"/><rect x="14" y="14" width="212" height="312" rx="12" fill="#fff"/>
+  <rect x="34" y="44" width="140" height="12" rx="6" fill="#BAF0F2"/><path d="M34 100 q16-22 32 0 t32 0 M120 100 h40" stroke="${sel?'#0067F8':'#C9D3DD'}" stroke-width="7" fill="none" stroke-linecap="round"/>
+  ${sel?`<g class="note"><path d="M26 86 C 26 66, 176 66, 180 92 C 184 118, 30 118, 28 100" stroke="#15CDD2" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 180 l14 14 l36 -40" stroke="#15CDD2" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>`:''}
+  <circle cx="120" cy="420" r="40" fill="${sel?'#15CDD2':'#C9D3DD'}"/>
+  ${sel?'<path d="M100 420 l14 14 l28 -30" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M100 400 l40 40 M140 400 l-40 40" stroke="#fff" stroke-width="9" stroke-linecap="round"/>'}
+ </g>`)});
+['ink1','ink2','ink3'].forEach(id=>{const p=document.getElementById(id);p.dataset.L=p.getTotalLength();p.style.strokeDasharray=p.dataset.L;});
+
+function render(t){
+  IDS.forEach((id,i)=>{const a=ST[i],b=ST[i+1];let o=cl((t-a)/0.35)*cl((b-t)/0.35);if(i===0&&t<0.35)o=1;if(i===IDS.length-1&&t>b-0.35)o=1;
+    const el=document.getElementById(id);el.style.opacity=o;const cap=el.querySelector('.cap');if(cap){const k=ease((t-a)/0.6);cap.style.transform=`translateY(${(1-k)*60}px)`;}});
+  const L=i=>t-ST[i];
+  // hook
+  const kh=ease(L(0)/0.8);document.getElementById('hookpage').setAttribute('transform',`translate(0,${(1-kh)*120+Math.sin(t*2.2)*8})`);
+  const kb=ease((L(0)-1.2)/0.6);document.getElementById('hookbubble').style.opacity=kb;
+  const kl=ease((L(0)-2.0)/0.6);document.getElementById('hooklock').setAttribute('transform',`translate(820,900) scale(${kl})`);
+  // layers fan out
+  const kf=ease((L(1)-0.5)/1.4);
+  document.getElementById('L1').setAttribute('transform',`translate(280,${1000-kf*0})`);
+  document.getElementById('L2').setAttribute('transform',`translate(${280+kf*90},${1000-kf*90}) rotate(${kf*4})`);
+  document.getElementById('L3').setAttribute('transform',`translate(${280+kf*180},${1000-kf*180}) rotate(${kf*8})`);
+  // menu
+  const km=ease((L(2)-0.3)/0.6);document.getElementById('menu').setAttribute('transform',`translate(220,${900+(1-km)*80})`);document.getElementById('menu').style.opacity=km;
+  const kc=ease((L(2)-0.9)/1.0);document.getElementById('cursor').setAttribute('transform',`translate(${760-kc*260},${1500-kc*290})`);
+  const hit=L(2)>2.0;document.getElementById('mitem').setAttribute('fill',hit?'#0067F8':'#E3F4FB');
+  const k2=ease((L(2)-2.8)/0.6);document.getElementById('lock2').setAttribute('transform',`translate(800,1500) scale(${k2})`);
+  // write
+  const ids=['ink1','ink2','ink3'],st=[0.4,1.5,2.1],du=[1.1,0.5,0.9];let pt=null;
+  ids.forEach((id,j)=>{const p=document.getElementById(id);const d=ease((L(3)-st[j])/du[j]);p.style.strokeDashoffset=p.dataset.L*(1-d);if(L(3)>=st[j]||j===0)pt=p.getPointAtLength(p.dataset.L*d);});
+  document.getElementById('pen').setAttribute('transform',`translate(${pt.x},${pt.y})`);
+  // exit
+  TX.forEach((x,i)=>{const g=document.getElementById('tb'+i);const k=ease((L(4)-0.3-i*0.2)/0.6);g.style.opacity=k;g.setAttribute('transform',`translate(${x},${1000+(1-k)*100})`);
+    const n=g.querySelector('.note');if(n)n.style.opacity=ease((L(4)-1.4)/0.6);});
+  const ke=ease((L(5)-0.2)/0.8);document.getElementById('logo').style.transform=`scale(${0.6+0.4*ke}) rotate(${(1-ke)*-12}deg)`;
+  document.getElementById('bar').style.width=(t/DUR*1080)+'px';
+}
+window.render=render;window.DUR=DUR;render(0);
+</script></body></html>
