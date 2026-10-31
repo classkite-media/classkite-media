@@ -1,0 +1,114 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#003463;--blue:#0067F8;--sky:#05A1D7;--teal:#15CDD2;--mint:#BAF0F2}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+#stage{position:relative;width:1080px;height:1920px;background:linear-gradient(165deg,#F4FBFF 0%,#E3F4FB 100%);overflow:hidden}
+.scene{position:absolute;inset:0;opacity:0}
+.cap{position:absolute;left:90px;right:90px;top:230px;color:var(--navy);font-weight:800;font-size:92px;line-height:1.08;letter-spacing:-2px}
+.cap small{display:block;font-size:44px;font-weight:600;color:var(--blue);letter-spacing:0;margin-top:28px;line-height:1.3}
+.step{display:inline-block;background:var(--blue);color:#fff;border-radius:28px;font-size:44px;font-weight:700;padding:12px 30px;margin-bottom:34px;letter-spacing:0}
+svg{position:absolute;left:0;top:0}
+#bar{position:absolute;left:0;bottom:0;height:14px;background:linear-gradient(90deg,var(--blue),var(--teal));width:0}
+#end{background:linear-gradient(165deg,#0052C4 0%,var(--navy) 100%)}
+#end .t{position:absolute;left:0;right:0;text-align:center;color:#fff}
+</style></head><body>
+<div id="stage">
+
+<div class="scene" id="s0">
+  <div class="cap">Worksheet in.<br>Practice out.<small>Build a question bank from a spreadsheet.</small></div>
+  <svg width="1080" height="1920">
+    <g id="h_sheet"><rect x="120" y="1000" width="380" height="500" rx="26" fill="#fff" stroke="#003463" stroke-width="8"/>
+      <rect x="170" y="1070" width="260" height="20" rx="10" fill="#BAF0F2"/><rect x="170" y="1120" width="220" height="20" rx="10" fill="#BAF0F2"/><rect x="170" y="1170" width="250" height="20" rx="10" fill="#BAF0F2"/>
+      <rect x="170" y="1240" width="200" height="20" rx="10" fill="#BAF0F2"/><rect x="170" y="1290" width="240" height="20" rx="10" fill="#BAF0F2"/><rect x="170" y="1340" width="180" height="20" rx="10" fill="#BAF0F2"/></g>
+    <g id="h_arrow"><path d="M530 1250 h70" stroke="#05A1D7" stroke-width="16" stroke-linecap="round"/><path d="M582 1218 l34 32 l-34 32" stroke="#05A1D7" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="h_cards"></g>
+  </svg>
+</div>
+
+<div class="scene" id="s1">
+  <div class="cap"><span class="step">Step 1</span><br>Download<br>the template.<small>From your section's Questions tab.</small></div>
+  <svg width="1080" height="1920">
+    <rect x="120" y="1000" width="840" height="140" rx="26" fill="#fff" stroke="#003463" stroke-width="7"/>
+    <rect x="160" y="1050" width="200" height="40" rx="12" fill="#DDF1FA"/><rect x="390" y="1050" width="200" height="40" rx="12" fill="#003463"/>
+    <g id="dlbtn"><rect x="660" y="1036" width="260" height="68" rx="34" fill="#0067F8"/><path d="M790 1048 v32 M772 1066 l18 18 l18 -18" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="dlsheet"><rect x="330" y="1220" width="420" height="440" rx="26" fill="#fff" stroke="#003463" stroke-width="8"/>
+      <rect x="330" y="1220" width="420" height="76" rx="26" fill="#15CDD2"/><rect x="330" y="1270" width="420" height="26" fill="#15CDD2"/>
+      <g stroke="#BAF0F2" stroke-width="5"><line x1="360" y1="1380" x2="720" y2="1380"/><line x1="360" y1="1460" x2="720" y2="1460"/><line x1="360" y1="1540" x2="720" y2="1540"/><line x1="470" y1="1310" x2="470" y2="1630"/><line x1="600" y1="1310" x2="600" y2="1630"/></g></g>
+  </svg>
+</div>
+
+<div class="scene" id="s2">
+  <div class="cap"><span class="step">Step 2</span><br>Fill it in.<small>By hand, or with an AI assistant you already use.</small></div>
+  <svg width="1080" height="1920">
+    <rect x="180" y="1000" width="720" height="640" rx="30" fill="#fff" stroke="#003463" stroke-width="8"/>
+    <rect x="180" y="1000" width="720" height="90" rx="30" fill="#15CDD2"/><rect x="180" y="1060" width="720" height="30" fill="#15CDD2"/>
+    <g id="rows"></g>
+    <g id="spark" transform="translate(900,980)" fill="#05A1D7"><path d="M0 -60 C 8 -18, 18 -8, 60 0 C 18 8, 8 18, 0 60 C -8 18, -18 8, -60 0 C -18 -8, -8 -18, 0 -60z"/></g>
+  </svg>
+</div>
+
+<div class="scene" id="s3">
+  <div class="cap"><span class="step">Step 3</span><br>Upload it.<small>Problem rows show the row number and why.</small></div>
+  <svg width="1080" height="1920">
+    <g id="uparrow"><circle cx="540" cy="1020" r="70" fill="#0067F8"/><path d="M540 1055 v-70 M510 1015 l30 -30 l30 30" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="urows"></g>
+  </svg>
+</div>
+
+<div class="scene" id="s4">
+  <div class="cap">Run it live.<small>Every answer is marked instantly.</small></div>
+  <svg width="1080" height="1920"><g id="tabs"></g></svg>
+</div>
+
+<div class="scene" id="end">
+  <img id="logo" src="logo.png" style="position:absolute;left:390px;top:540px;width:300px;height:300px;border-radius:64px">
+  <div class="t" style="top:910px;font-size:110px;font-weight:800;letter-spacing:-2px">ClassKite</div>
+  <div class="t" style="top:1070px;font-size:48px;font-weight:600;color:#BAF0F2">Writing questions is free.</div>
+  <div class="t" style="top:1240px;font-size:54px;font-weight:700"><span style="background:#15CDD2;color:#003463;padding:20px 48px;border-radius:60px">classkite.com</span></div>
+</div>
+
+<div id="bar"></div>
+</div>
+<script>
+const D=JSON.parse(decodeURIComponent(location.hash.slice(1)||'%5B5.7%2C4.4%2C8.4%2C7.9%2C5.1%2C5.6%5D'));
+const IDS=['s0','s1','s2','s3','s4','end']; const ST=[0]; D.forEach(d=>ST.push(ST[ST.length-1]+d)); const DUR=ST[ST.length-1];
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3), cl=x=>Math.max(0,Math.min(1,x));
+// hook cards
+const HC=['#003463','#0067F8','#05A1D7'];
+HC.forEach((c,i)=>document.getElementById('h_cards').insertAdjacentHTML('beforeend',`<g id="hc${i}"><rect width="320" height="140" rx="22" fill="${c}"/><rect x="40" y="46" width="180" height="16" rx="8" fill="#fff" opacity=".85"/><rect x="40" y="78" width="120" height="16" rx="8" fill="#fff" opacity=".5"/><g transform="translate(270,70)" class="tk" opacity="0"><circle r="30" fill="#15CDD2"/><path d="M-13 0 l8 8 l18 -20" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>`));
+// fill rows
+const R=document.getElementById('rows');
+for(let i=0;i<6;i++){const y=1120+i*84;R.insertAdjacentHTML('beforeend',`<line x1="210" y1="${y+70}" x2="870" y2="${y+70}" stroke="#DDF1FA" stroke-width="4"/><g class="r" opacity="0"><rect x="220" y="${y+20}" width="${120+((i*37)%60)}" height="26" rx="13" fill="#0067F8" opacity=".8"/><rect x="420" y="${y+20}" width="${200+((i*53)%120)}" height="26" rx="13" fill="#BAF0F2"/><rect x="760" y="${y+20}" width="90" height="26" rx="13" fill="#15CDD2"/></g>`);}
+// upload rows
+const U=document.getElementById('urows');
+for(let i=0;i<6;i++){const y=1160+i*96;const bad=i===3;U.insertAdjacentHTML('beforeend',`<g class="u" opacity="0" transform="translate(0,${y})"><rect x="180" width="720" height="76" rx="18" fill="#fff" stroke="${bad?'#F5A623':'#BAF0F2'}" stroke-width="5"/><rect x="220" y="26" width="${240+((i*41)%140)}" height="24" rx="12" fill="${bad?'#F5A623':'#BAF0F2'}" opacity="${bad?.6:1}"/><g transform="translate(850,38)"><circle r="24" fill="${bad?'#F5A623':'#3DBE7A'}"/>${bad?'<path d="M0 -12 v12 M0 10 v2" stroke="#fff" stroke-width="6" stroke-linecap="round"/>':'<path d="M-10 0 l7 7 l14 -16" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'}</g></g>`);}
+// tablets
+const TX=[110,420,730];
+TX.forEach((x,i)=>document.getElementById('tabs').insertAdjacentHTML('beforeend',`<g id="tb${i}" transform="translate(${x},1000)"><rect width="240" height="340" rx="26" fill="#003463"/><rect x="14" y="14" width="212" height="312" rx="12" fill="#fff"/><rect x="34" y="44" width="160" height="14" rx="7" fill="#003463" opacity=".8"/>${[0,1,2].map(j=>`<rect x="34" y="${90+j*62}" width="172" height="46" rx="12" fill="#E3F4FB" stroke="#05A1D7" stroke-width="3"/>`).join('')}<rect class="pick" x="34" y="${90+((i+1)%3)*62}" width="172" height="46" rx="12" fill="#3DBE7A" opacity="0"/><g class="mk" opacity="0" transform="translate(120,${113+((i+1)%3)*62})"><path d="M-16 0 l10 10 l20 -20" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>`));
+
+function render(t){
+  IDS.forEach((id,i)=>{const a=ST[i],b=ST[i+1];let o=cl((t-a)/0.35)*cl((b-t)/0.35);if(i===0&&t<0.35)o=1;if(i===IDS.length-1&&t>b-0.35)o=1;
+    const el=document.getElementById(id);el.style.opacity=o;const cap=el.querySelector('.cap');if(cap){const k=ease((t-a)/0.6);cap.style.transform=`translateY(${(1-k)*60}px)`;}});
+  const L=i=>t-ST[i];
+  // hook
+  document.getElementById('h_sheet').setAttribute('transform',`translate(0,${(1-ease(L(0)/0.8))*100})`);
+  document.getElementById('h_arrow').style.opacity=ease((L(0)-0.8)/0.5);
+  HC.forEach((c,i)=>{const k=ease((L(0)-1.2-i*0.35)/0.6);const g=document.getElementById('hc'+i);g.setAttribute('transform',`translate(${640-(1-k)*60},${1010+i*180})`);g.style.opacity=k;g.querySelector('.tk').setAttribute('opacity',ease((L(0)-2.6-i*0.3)/0.4));});
+  // step1
+  const pb=L(1)-1.2;const s=pb>0&&pb<0.4?1-0.12*Math.sin(pb/0.4*Math.PI):1;document.getElementById('dlbtn').setAttribute('transform',`translate(790,1070) scale(${s}) translate(-790,-1070)`);
+  const kd=ease((L(1)-1.6)/0.8);document.getElementById('dlsheet').setAttribute('transform',`translate(0,${(1-kd)*-120})`);document.getElementById('dlsheet').style.opacity=kd;
+  // step2
+  document.querySelectorAll('#rows .r').forEach((r,i)=>r.setAttribute('opacity',ease((L(2)-0.8-i*0.7)/0.4)));
+  const sp=ease((L(2)-2.5)/0.5);document.getElementById('spark').setAttribute('transform',`translate(900,980) scale(${sp}) rotate(${L(2)*30})`);
+  // step3
+  const ku=L(3)<1.2?ease(L(3)/0.6):1;document.getElementById('uparrow').setAttribute('transform',`translate(0,${(1-ku)*80-Math.max(0,Math.sin((L(3)-0.6)*4))*10})`);
+  document.querySelectorAll('#urows .u').forEach((u,i)=>u.setAttribute('opacity',ease((L(3)-1.0-i*0.45)/0.35)));
+  // step4
+  TX.forEach((x,i)=>{const g=document.getElementById('tb'+i);const k=ease((L(4)-0.2-i*0.2)/0.5);g.style.opacity=k;g.setAttribute('transform',`translate(${x},${1000+(1-k)*100})`);const m=ease((L(4)-1.4-i*0.4)/0.3);g.querySelector('.pick').setAttribute('opacity',m);g.querySelector('.mk').setAttribute('opacity',m);});
+  const ke=ease((L(5)-0.2)/0.8);document.getElementById('logo').style.transform=`scale(${0.6+0.4*ke}) rotate(${(1-ke)*-12}deg)`;
+  document.getElementById('bar').style.width=(t/DUR*1080)+'px';
+}
+window.render=render;window.DUR=DUR;render(0);
+</script></body></html>
