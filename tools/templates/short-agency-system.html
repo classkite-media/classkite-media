@@ -1,0 +1,106 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root{--navy:#003463;--blue:#0067F8;--sky:#05A1D7;--teal:#15CDD2;--mint:#BAF0F2;--slate:#4A6178}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+#stage{position:relative;width:1080px;height:1920px;background:#F4F8FC;overflow:hidden}
+#glow{position:absolute;right:-300px;top:-300px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(21,205,210,.2),rgba(21,205,210,0) 70%)}
+.top{position:absolute;left:80px;right:80px;top:110px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.brand{display:flex;align-items:center;gap:20px;font-weight:800;font-size:42px;color:var(--navy);letter-spacing:-.5px}
+.brand img{width:76px;height:76px;border-radius:18px}
+.pill{font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fff;background:var(--blue);padding:14px 28px;border-radius:999px}
+.scene{position:absolute;inset:0;opacity:0}
+.cap{position:absolute;left:80px;right:80px;top:290px}
+.kick{font-size:32px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--sky);margin-bottom:26px}
+h1{font-size:100px;line-height:1.02;font-weight:800;letter-spacing:-3.5px;color:var(--navy)}
+h1 em{font-style:normal;color:var(--blue)}
+.sub{margin-top:30px;font-size:42px;line-height:1.3;font-weight:500;color:var(--slate)}
+.panel{position:absolute;left:80px;right:80px;top:880px;height:760px;border-radius:48px;background:linear-gradient(150deg,#003463,#0A4C8A);overflow:hidden}
+.panel::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 2px,transparent 2px);background-size:30px 30px}
+.panel svg{position:absolute;inset:0;z-index:1}
+.foot{position:absolute;left:80px;right:80px;bottom:120px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.url{font-size:36px;font-weight:700;color:var(--navy)}
+.chip{font-size:30px;font-weight:600;color:var(--navy);background:#fff;border:3px solid #D9E4EE;padding:12px 26px;border-radius:999px}
+.chip b{color:#0A8F94}
+#bar{position:absolute;left:0;bottom:0;height:16px;background:linear-gradient(90deg,var(--blue),var(--teal));width:0;z-index:6}
+#end{background:linear-gradient(160deg,#003463,#0A4C8A);z-index:7}
+#end .t{position:absolute;left:0;right:0;text-align:center;color:#fff}
+</style></head><body><div id="stage"><div id="glow"></div>
+<div class="top"><div class="brand"><img src="logo.png">ClassKite</div><div class="pill">Tip</div></div>
+
+<div class="scene" id="s0"><div class="cap"><div class="kick">After the lesson</div><h1>The lesson's over. The practice <em>isn't.</em></h1></div>
+ <div class="panel"><svg width="920" height="760">
+  <g id="a_board"><rect x="70" y="210" width="380" height="270" rx="26" fill="#fff"/><rect x="110" y="250" width="220" height="22" rx="11" fill="#003463" opacity=".8"/><rect x="110" y="300" width="290" height="16" rx="8" fill="#C9D6E2"/><rect x="110" y="336" width="250" height="16" rx="8" fill="#C9D6E2"/><path d="M110 410 C 160 380, 200 440, 260 400" stroke="#0067F8" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="200" y="480" width="120" height="70" fill="#fff" opacity=".25"/></g>
+  <g id="a_arrow"><path d="M480 345 h90" stroke="#15CDD2" stroke-width="16" stroke-linecap="round"/><path d="M550 310 l38 35 l-38 35" stroke="#15CDD2" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="a_home"><path d="M620 330 l130 -110 l130 110 v170 h-260z" fill="#15CDD2"/><rect x="715" y="400" width="70" height="100" rx="10" fill="#003463"/><rect x="650" y="350" width="50" height="50" rx="8" fill="#fff"/></g>
+ </svg></div></div>
+
+<div class="scene" id="s1"><div class="cap"><div class="kick">Step 1</div><h1>End the session. Hand it back as <em>self-practice.</em></h1></div>
+ <div class="panel"><svg width="920" height="760">
+  <g id="b_dlg"><rect x="130" y="150" width="660" height="440" rx="34" fill="#fff"/>
+   <rect x="190" y="210" width="360" height="26" rx="13" fill="#003463" opacity=".85"/><rect x="190" y="262" width="480" height="18" rx="9" fill="#C9D6E2"/><rect x="190" y="298" width="420" height="18" rx="9" fill="#C9D6E2"/>
+   <rect x="190" y="440" width="230" height="84" rx="42" fill="#EEF5FB"/>
+   <g id="b_btn"><rect x="440" y="440" width="290" height="84" rx="42" fill="#15CDD2"/><path d="M520 486 l30 -26 l30 26 v32 h-60z" fill="#003463"/><rect x="600" y="472" width="100" height="18" rx="9" fill="#003463" opacity=".7"/></g></g>
+  <g id="b_cur" transform="translate(640,520)"><path d="M0 0 l0 70 l18 -16 l14 30 l14 -6 l-14 -30 l24 -2z" fill="#fff" stroke="#003463" stroke-width="5" stroke-linejoin="round"/></g>
+ </svg></div></div>
+
+<div class="scene" id="s2"><div class="cap"><div class="kick">Step 2</div><h1>Students find it under <em>Open for self-practice.</em></h1></div>
+ <div class="panel"><svg width="920" height="760">
+  <g transform="translate(230,70)"><rect width="460" height="620" rx="44" fill="#0B2540"/><rect x="18" y="18" width="424" height="584" rx="30" fill="#fff"/>
+   <rect x="50" y="60" width="240" height="24" rx="12" fill="#003463" opacity=".85"/>
+   <g id="c_items"></g></g>
+ </svg></div></div>
+
+<div class="scene" id="s3"><div class="cap"><div class="kick">Instant feedback</div><h1>Every answer is <em>marked straight away.</em></h1></div>
+ <div class="panel"><svg width="920" height="760"><g id="d_q"></g></svg></div></div>
+
+<div class="scene" id="s4"><div class="cap"><div class="kick">Retakes</div><h1>Retake as often as they <em>like.</em></h1><div class="sub">An unfinished retake never replaces a finished result.</div></div>
+ <div class="panel" style="top:1000px;height:640px"><svg width="920" height="640">
+  <g transform="translate(90,120)"><rect width="740" height="150" rx="30" fill="#fff"/><text x="40" y="62" font-family="Inter" font-weight="800" font-size="30" fill="#003463">Attempt 1</text><text x="40" y="106" font-family="Inter" font-weight="600" font-size="26" fill="#0A8F94">Finished</text>
+   <rect x="300" y="60" width="300" height="30" rx="15" fill="#DDF7F8"/><rect id="e_b1" x="300" y="60" width="300" height="30" rx="15" fill="#15CDD2"/><g transform="translate(670,75)"><circle r="34" fill="#15CDD2"/><path d="M-15 0 l10 10 l22 -24" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+  <g id="e_a2" transform="translate(90,330)"><rect width="740" height="150" rx="30" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.5)" stroke-width="4" stroke-dasharray="16 12"/><text x="40" y="62" font-family="Inter" font-weight="800" font-size="30" fill="#fff">Attempt 2</text><text x="40" y="106" font-family="Inter" font-weight="600" font-size="26" fill="#F5C443">In progress</text>
+   <rect x="300" y="60" width="300" height="30" rx="15" fill="rgba(255,255,255,.18)"/><rect id="e_b2" x="300" y="60" width="0" height="30" rx="15" fill="#F5C443"/></g>
+ </svg></div></div>
+
+<div class="scene" id="s5"><div class="cap"><div class="kick">You're in control</div><h1>Open until you <em>close it.</em></h1><div class="sub">Or until the term ends. No automatic deadlines.</div></div>
+ <div class="panel" style="top:1000px;height:640px"><svg width="920" height="640">
+  <g transform="translate(260,190)"><rect width="400" height="200" rx="100" fill="#15CDD2" id="f_track"/><circle id="f_knob" cx="300" cy="100" r="80" fill="#fff"/></g>
+  <text id="f_lbl" x="460" y="510" text-anchor="middle" font-family="Inter" font-weight="800" font-size="44" fill="#fff" letter-spacing="4">OPEN</text>
+ </svg></div></div>
+
+<div class="foot"><div class="url">classkite.com</div><div class="chip"><b>Free</b> on every plan</div></div>
+
+<div class="scene" id="end">
+ <img id="elogo" src="logo.png" style="position:absolute;left:390px;top:520px;width:300px;height:300px;border-radius:66px">
+ <div class="t" style="top:900px;font-size:112px;font-weight:800;letter-spacing:-3px">ClassKite</div>
+ <div class="t" style="top:1060px;font-size:50px;font-weight:600;color:#BAF0F2">Self-practice is free on every plan.</div>
+ <div class="t" style="top:1240px;font-size:56px;font-weight:800"><span style="background:#15CDD2;color:#003463;padding:22px 52px;border-radius:70px">classkite.com</span></div>
+</div>
+<div id="bar"></div></div>
+<script>
+const D=JSON.parse(decodeURIComponent(location.hash.slice(1)||'%5B4%2C6.1%2C4.9%2C3.6%2C7.2%2C6.2%2C5.6%5D'));
+const IDS=['s0','s1','s2','s3','s4','s5','end'];const ST=[0];D.forEach(d=>ST.push(ST[ST.length-1]+d));const DUR=ST[ST.length-1];
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3),cl=x=>Math.max(0,Math.min(1,x));
+const C=document.getElementById('c_items');
+for(let i=0;i<4;i++){const y=130+i*112,hi=i===0;C.insertAdjacentHTML('beforeend',`<g class="ci" transform="translate(50,${y})"><rect width="360" height="90" rx="20" fill="${hi?'#DDF7F8':'#F1F5F9'}" stroke="${hi?'#15CDD2':'#E2E8F0'}" stroke-width="4"/><circle cx="46" cy="45" r="22" fill="${hi?'#15CDD2':'#C9D6E2'}"/><rect x="88" y="28" width="${hi?190:150+i*12}" height="16" rx="8" fill="#003463" opacity="${hi?.8:.35}"/><rect x="88" y="54" width="110" height="12" rx="6" fill="#94A3B8" opacity=".6"/></g>`);}
+const Q=document.getElementById('d_q');
+for(let i=0;i<3;i++){const y=90+i*200;Q.insertAdjacentHTML('beforeend',`<g class="dq" transform="translate(110,${y})"><rect width="700" height="160" rx="30" fill="#fff"/><rect x="40" y="46" width="${330-i*40}" height="22" rx="11" fill="#003463" opacity=".8"/><rect x="40" y="94" width="${230+i*30}" height="18" rx="9" fill="#C9D6E2"/><g class="tk" transform="translate(620,80)"><circle r="44" fill="#15CDD2"/><path d="M-19 0 l13 13 l28 -30" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>`);}
+function render(t){
+ IDS.forEach((id,i)=>{const a=ST[i],b=ST[i+1];let o=cl((t-a)/0.35)*cl((b-t)/0.35);if(i===0&&t<0.35)o=1;if(i===IDS.length-1&&t>b-0.35)o=1;
+  const el=document.getElementById(id);el.style.opacity=o;const cap=el.querySelector('.cap');if(cap){const k=ease((t-a)/0.6);cap.style.transform=`translateY(${(1-k)*50}px)`;}
+  const p=el.querySelector('.panel');if(p){const k=ease((t-a-0.15)/0.7);p.style.transform=`translateY(${(1-k)*80}px)`;}});
+ const L=i=>t-ST[i];
+ document.getElementById('a_board').style.opacity=ease((L(0)-0.3)/0.5);
+ document.getElementById('a_arrow').style.opacity=ease((L(0)-1.0)/0.4);
+ const kh=ease((L(0)-1.4)/0.6);document.getElementById('a_home').setAttribute('transform',`translate(750,500) scale(${kh}) translate(-750,-500)`);
+ const kd=ease((L(1)-0.4)/0.6);document.getElementById('b_dlg').setAttribute('transform',`translate(460,370) scale(${0.85+0.15*kd}) translate(-460,-370)`);document.getElementById('b_dlg').style.opacity=kd;
+ const kc=ease((L(1)-1.4)/1.0);document.getElementById('b_cur').setAttribute('transform',`translate(${820-kc*200},${640-kc*130})`);
+ const pb=L(1)-2.5;const s=pb>0&&pb<0.4?1-0.08*Math.sin(pb/0.4*Math.PI):1;document.getElementById('b_btn').setAttribute('transform',`translate(585,482) scale(${s}) translate(-585,-482)`);
+ document.querySelectorAll('#c_items .ci').forEach((g,i)=>{const k=ease((L(2)-0.5-i*0.25)/0.4);g.style.opacity=k;});
+ document.querySelectorAll('#d_q .dq').forEach((g,i)=>{const k=ease((L(3)-0.2-i*0.3)/0.4);g.style.opacity=k;const m=ease((L(3)-0.6-i*0.4)/0.3);g.querySelector('.tk').setAttribute('transform',`translate(620,80) scale(${m})`);});
+ document.getElementById('e_b2').setAttribute('width',Math.min(140,Math.max(0,(L(4)-1.0)*60)));
+ const kt=1;document.getElementById('f_knob').setAttribute('cx',100+200*kt);document.getElementById('f_track').setAttribute('fill',kt>0.5?'#15CDD2':'#64748B');document.getElementById('f_lbl').textContent=kt>0.5?'OPEN':'CLOSED';
+ const ke=ease((L(6)-0.2)/0.8);document.getElementById('elogo').style.transform=`scale(${0.6+0.4*ke}) rotate(${(1-ke)*-12}deg)`;
+ document.getElementById('bar').style.width=(t/DUR*1080)+'px';
+}
+window.render=render;window.DUR=DUR;render(0);
+</script></body></html>
